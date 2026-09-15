@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FraudGuard — Team Directory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand brand-link" href="/" aria-label="Back to FraudGuard payments">
+      <div class="brand-mark">FG</div>
+      <div><strong>FraudGuard</strong><span>Secure payments, protected every time</span></div>
+    </a>
+    <div class="top-actions"><span class="network-dot"></span><span>Payment network secure</span><span class="profile">A</span></div>
+  </header>
+
+  <main class="directory-main">
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow">YOUR COMMUNITY</p>
+        <h1>Friends, faculty &amp; team</h1>
+        <p>Everyone in the FraudGuard directory, together in one place.</p>
+      </div>
+      <a class="ghost" href="/">← Back to payments</a>
+    </div>
+
+    <section class="card directory-card" aria-labelledby="directory-title">
+      <div class="section-title">
+        <div>
+          <h2 id="directory-title">All members</h2>
+          <p class="directory-subtitle" id="directory-count">Loading directory…</p>
+        </div>
+        <label class="directory-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="team-search" type="search" placeholder="Search by name or ID" aria-label="Search directory" />
+        </label>
+      </div>
+      <div class="team-grid directory-grid" id="team-list" aria-live="polite">
+        <div class="loading">Loading directory…</div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="/team.js"></script>
+</body>
+</html>
